@@ -1,6 +1,6 @@
 {
-  "name": "Destined-Kronos Launcher",
-  "productName": "Destined-Kronos Launcher",
+  "name": "Destined Kronos Launcher",
+  "productName": "Destined Kronos Launcher",
   "description": "Client Application Launcher",
   "keywords": [],
   "main": "./main.js",
