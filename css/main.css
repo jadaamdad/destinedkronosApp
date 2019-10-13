@@ -23,6 +23,7 @@ button,li{
 }
 button{
   background:none;
+  -webkit-app-region: no-drag;
 }
 
 .exit{
