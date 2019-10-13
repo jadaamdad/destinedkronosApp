@@ -105,7 +105,7 @@ i[bubble][status='offline']{
 
 .logo{
   width:269px;height:120px;
-  background:url(https://s.cdpn.io/12109/tsx_logo.png) 0 0 no-repeat;
+  background-image: image("./images/destined_logo.png")0 0 no-repeat;
   position:absolute;top:8px;left:50%;margin-left:-134px;
   z-index:100;
 }
@@ -200,6 +200,11 @@ i[bubble][status='offline']{
     ,rgba(15,14,14,1) 36%
     ,rgba(15,14,14,0.32) 100%);
   border-radius:6px;
+}
+.content .Announcements{
+  margin:0px;
+  font-size:14px; color:#9d0404; font-family: "Phrag"
+
 }
 .content p{
   margin:0px;
