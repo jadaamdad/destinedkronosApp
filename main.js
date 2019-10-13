@@ -3,7 +3,7 @@
 // For more info, see:
 // https://electronjs.org/docs/api/menu
 
-const { app, BrowserWindow, Menu } = require('electron')
+const { app, BrowserWindow, Menu } = require('electron','update-electron-app')
 
 let mainWindow = null
 

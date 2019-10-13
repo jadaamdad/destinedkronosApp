@@ -1,7 +1,7 @@
 {
-  "name": "confident-weakness-inventory",
-  "productName": "confident-weakness-inventory",
-  "description": "My Electron application description",
+  "name": "Destined-Kronos Launcher",
+  "productName": "Destined-Kronos Launcher",
+  "description": "Client Application Launcher",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",
@@ -9,7 +9,9 @@
   "scripts": {
     "start": "electron ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "update-electron-app": "^1.5.0"
+  },
   "devDependencies": {
     "electron": "^5.0.0-beta.7"
   }
