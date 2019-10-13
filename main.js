@@ -11,32 +11,5 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({ height: 600, width: 600 })
   mainWindow.loadFile('index.html')
 
-  const template = [
-    {
-      label: 'File',
-    },
-    {
-      label: 'Hello From Electron!',
-      submenu: [
-        {
-          label: 'I have a custom handler',
-          click () {
-            console.log('👋')
-          }
-        },
-        { type: 'separator' },
-        { role: 'reload' },
-        { role: 'forcereload' },
-        { role: 'toggledevtools' },
-        { type: 'separator' },
-        { role: 'resetzoom' },
-        { role: 'zoomin' },
-        { role: 'zoomout' },
-        { type: 'separator' }
-      ]
-    }
-  ]
-
-  const menu = Menu.buildFromTemplate(template)
-  Menu.setApplicationMenu(menu)
+  Menu.setApplicationMenu(null)
 })
