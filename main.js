@@ -14,14 +14,6 @@ app.on('ready', () => {
   const template = [
     {
       label: 'File',
-      submenu: [
-        { role: 'undo' },
-        { role: 'redo' },
-        { type: 'separator' },
-        { role: 'cut' },
-        { role: 'copy' },
-        { role: 'paste' }
-      ]
     },
     {
       label: 'Hello From Electron!',
