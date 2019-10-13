@@ -8,7 +8,7 @@ const { app, BrowserWindow, Menu } = require('electron')
 let mainWindow = null
 
 app.on('ready', () => {
-  mainWindow = new BrowserWindow({ height: 600, width: 600 })
+  mainWindow = new BrowserWindow({ height: 600, width: 600,frame: false })
   mainWindow.loadFile('index.html')
 
   Menu.setApplicationMenu(null)
