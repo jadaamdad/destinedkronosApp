@@ -4,6 +4,7 @@
 
 button,li,a,span,i{
   -webkit-user-select:none;
+  -webkit-app-region: no-drag;
 }
 
 html,body{
@@ -12,6 +13,7 @@ html,body{
 }
 a:hover,button:hover,li:hover,.server:hover{
   opacity:0.76; cursor:pointer;
+
 }
 *{
   color:#fff;
@@ -23,7 +25,6 @@ button,li{
 }
 button{
   background:none;
-  -webkit-app-region: no-drag;
 }
 
 .exit{
@@ -35,19 +36,19 @@ button{
 }
 
 .root{
-  width:1024px;height:700px;
+  width:600px;height:600px;
   background:black url("../images/dk_background.png") 0 0 no-repeat;
   color:#fff;
   position:relative;
 }
 .header{
-  width:100%;height:130px;
+  width:100%;height:100px;
   overflow:hidden;
 }
 .server{
-  font-size:15px;
-  position:absolute;left:0px;top:85px;
-  width:314px;
+  font-size:12px;
+  position:absolute;left:0px;top:50px;
+  width:100px;
   padding:10px;padding-right:0px;
 
   background: linear-gradient(to right
@@ -58,7 +59,7 @@ button{
 }
 i[bubble]{
   position:relative;display:inline-block;
-  width:14px;height:14px;
+  width:6px;height:6px;
   border-radius:7px;
   background:#aaa;
   margin-right:13px;
@@ -66,7 +67,7 @@ i[bubble]{
   box-shadow:0px 0px 2px 2px rgba(0,0,0,0.4);
 }
 i[bubble]:before{
-  width:14px;height:14px;
+  width:6px;height:6px;
   content:"";
   background:#ff00ff;
   position:absolute;
@@ -75,7 +76,7 @@ i[bubble]:before{
 }
 i[bubble]:after{
   content:"";
-  width:12px;height:5px;
+  width:4px;height:2px;
   border-radius:14px;
   background:#fff;
   position:absolute;top:0px;left:1px;
@@ -88,49 +89,35 @@ i[bubble][status='offline']{
   background:#ab102d;
 }
 
-.header .nav li i{
-  width:23px;height:23px;
-  display:inline-block;
-  padding:0px;margin:0px;
-  margin-bottom:-4px;
-  margin-right:6px;
-  background-repeat:no-repeat;
-  background-position:1px 1px;
-}
-
-.nav_leaderboards i{ background:url(//s.cdpn.io/12109/tsx_item_bag.png); }
-.nav_server i{ background:url(//s.cdpn.io/12109/tsx_server.png); }
-.nav_notes i{ background:url(//s.cdpn.io/12109/tsx_notes.png); }
-.nav_monster_drop i{ background:url(./images/Runescape.jpg); }
-.nav_options i{ background:url(./images/Runescape.jpg); }
 
 .logo{
-  width:269px;height:120px;
+  width:269px;height:100px;
   background: url("../images/destined_logo.png") 0 0 no-repeat;
-  position:absolute;top:8px;left:50%;margin-left:-134px;
+  position:absolute;top:-10px;left:50%;margin-left:-134px;
+
   z-index:100;
 }
 .header .nav{
   background:rgba(225,225,225,0.16);
   display:inline-block;
-  position:absolute;left:0px;top:132px;
+  position:absolute;left:0px;top:100px;
   padding:0px;margin:0px;
   width:100%;
 }
 .header .nav li{
-  width:204px;
-  height:46px;
-  line-height:45px;
+  width:150px;
+  height:25px;
+  line-height:20px;
   list-style:none;
   float:left;
-  font-size:19px;color:#919191;
+  font-size:12px;color:#919191;
   text-align:center;
   position:relative;
 }
 
 .header .nav li:not(:last-child):before{
   content:"";
-  width:2px;height:90%;
+  width:1px;height:90%;
 
     background: linear-gradient(to bottom
     ,rgba(255,255,255,0) 1%
@@ -138,7 +125,7 @@ i[bubble][status='offline']{
     ,rgba(255,255,255,0.3) 60%
     ,rgba(255,255,255,0) 99%);
 
-  z-index:50;
+  z-index:20;
   position:absolute;right:0px;bottom:0px;
 }
 
@@ -157,41 +144,10 @@ i[bubble][status='offline']{
   margin-left:6px;
 }
 
-.session{
-  width:300px;height:80px;
-  position:absolute;right:6px;top:44px;
-  text-align:right;
-  overflow:hidden;
-}
-.session .info{
-  width:100%;height:26px; overflow:hidden;
-  position:absolute;right:0px;bottom:26px;
-  font-size:15px;
-  color:#a1a1a1;
-}
-.session .info .name{
-  color:#fff;
-  margin-left:10px;
-  text-shadow:1px 1px 0px #000;
-  padding-right:12px;
-}
-.session .logout{
-  width:100px;height:30px;
-  font-size:17px;
-  position:absolute;right:0px;bottom:0px;
-  text-align:right;padding-right:12px;
-}
-.session .logout i{
-  width:22px;height:22px;
-  content:"";
-  background:url(//s.cdpn.io/12109/tsx_door.png) 0 0 no-repeat;
-  position:absolute;left:6px;top:50%;margin-top:-11px;
-}
-
 .main{
-  width:100%;height:320px;
+  width:95%;height:250px;
   overflow:hidden;
-  position:absolute;bottom:196px;
+  position:absolute;bottom:220px;left:-20px;
   z-index:1;
 }
 .main > .content{
@@ -203,7 +159,7 @@ i[bubble][status='offline']{
   border-radius:6px;
 }
 .content .Announcements{
-  margin:0px;
+  margin:3px;
   font-size:14px; color:#9d0404; font-family: "Phrag"
 
 }
@@ -256,10 +212,10 @@ button.youtube{background:url(//s.cdpn.io/12109/tsx_youtube.png);}
 }
 
 .footer .progress{
-  width:682px;height:56px;
+  width:85%;height:56px;
   border:1px solid #333; border-top:none;
   border-left-color:#1c1c1c; border-right-color:#1c1c1c;
-  position:absolute;left:50%;margin-left:-341px;bottom:103px;
+  position:absolute;left:50%;margin-left:-285px;bottom:103px;
   border-radius:2px;
   background: -webkit-linear-gradient(rgba(15,14,14,1) 20%, rgba(15,14,14,0) 90%);
 }
@@ -285,7 +241,7 @@ button.youtube{background:url(//s.cdpn.io/12109/tsx_youtube.png);}
 .footer .progress .percent{ text-align:right; left:-6px; }
 
 progress{
-  width:666px;height:9px;
+  width:75%;height:9px;
   margin:0px;padding:0px;
   /* reset - this allows us to do awesome progress bar skins */
   -webkit-appearance:none;

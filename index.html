@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body style="-webkit-app-region: drag">
@@ -11,10 +18,10 @@
     <div class="server"><i bubble status="online"></i><span>Server Status</span></div>
     <div class="logo"></div>
     <ul class="nav">
-      <li class="nav_notes"><i></i>Patch Notes</li>
-      <li class="nav_bug"><i></i>Bug Report</li>
-      <li class="nav_leaderboards"><i></i>Leaderboards</li>
-      <li class="nav_monster_drop"><i></i>Monster Drop</li>
+      <li class="nav_notes">Patch Notes</li>
+      <li class="nav_bug">Bug Report</li>
+      <li class="nav_leaderboards">Leaderboards</li>
+      <li class="nav_monster_drop">Monster Drop</li>
     </ul>
   </div><!-- header end -->
   <div class="main">
@@ -28,14 +35,15 @@
   </div>
   <div class="footer">
     <div class="progress">
-      <progress class="first red" value="1337" max="4159"></progress>
-      <progress class="second" value="1337" max="4159"></progress>
-      <div class="filename">Currently patching some.file</div>
-      <div class="status">Please wait, patching...</div>
+      <progress class="first red" value="0" max="100"></progress>
+      <progress class="second" value="0" max="100"></progress>
+      <div class="filename"></div>
+      <div class="status"></div>
       <div class="percent">100/100</div>
     </div>
-    <button class="launch"><span>LAUNCH GAME</span></button>
+    <button class="launch"><span>Launch Client</span></button>
   </div><!-- footer end -->
 </div>
+
 </body>
 </html>
