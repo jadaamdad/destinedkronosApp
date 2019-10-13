@@ -3,8 +3,12 @@
 // For more info, see:
 // https://electronjs.org/docs/api/menu
 
-const { app, BrowserWindow, Menu } = require('electron','update-electron-app')
-
+const { app, BrowserWindow, Menu } = require('electron')
+require('update-electron-app')({
+  repo: 'jadaamdad/destinedkronosApp',
+  updateInterval: '1 hour',
+  logger: require('electron-log')
+})
 let mainWindow = null
 
 app.on('ready', () => {
