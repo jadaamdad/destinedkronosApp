@@ -35,7 +35,7 @@ button{
 
 .root{
   width:1024px;height:700px;
-  background:black url(https://s.cdpn.io/12109/tsx_bg.png) 0 0 no-repeat;
+  background:black url("../images/destined_background.png") 0 0 no-repeat;
   color:#fff;
   position:relative;
 }
